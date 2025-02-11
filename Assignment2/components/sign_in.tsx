@@ -3,8 +3,8 @@ import { useState } from "react";
 import credentials from "../credentials.json";
 const Sign_in = () => {
     const handleSignIn = () => {alert ("Sign In pressed")}
-    const [Username,setUserName] = useState("");
-    const [Password,setPassword] = useState("");
+    const [Username,setUserName] = useState<string>("");
+    const [Password,setPassword] = useState<string>("");
 
     return (
         <View style={styles.container}>
