@@ -1,8 +1,11 @@
 import { View, Text, TextInput, StyleSheet, Button} from "react-native";
 import { useState } from "react";
 import credentials from "../credentials.json";
-const Sign_in = () => {
-    const handleSignIn = () => {alert ("Sign In pressed")}
+
+type Sign_inProps = { setIsSignedIn: ( isSignedIn: boolean) => void };
+
+const Sign_in: React.FC<Sign_inProps> = ({setIsSignedIn}) => {
+    const handleSignIn = () => {setIsSignedIn(true)}
     const [Username,setUserName] = useState<string>("");
     const [Password,setPassword] = useState<string>("");
 

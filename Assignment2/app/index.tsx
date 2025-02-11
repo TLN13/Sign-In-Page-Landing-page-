@@ -9,8 +9,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Sign_in/>
-      <Welcome/>
+      {isSignedIn ? <Welcome/>: <Sign_in setIsSignedIn={setIsSignedIn}/>}
     </View>
   );
 }
