@@ -3,6 +3,7 @@
     "name": "Assignment2",
     "slug": "Assignment2",
     "version": "1.0.0",
+    "scheme": "Assignment2",
     "orientation": "portrait",
     "plugins": [["expo-router"]],
     "icon": "./assets/icon.png",
