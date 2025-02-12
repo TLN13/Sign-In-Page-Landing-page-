@@ -1,12 +1,11 @@
 import { View, Text, StyleSheet } from "react-native"; 
-
-const CalgaryScreen = () => {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Welcome to Calgary!</Text>
-        </View>
-    );
-};
+import CityScreen from "../components/cityScreen";
+const CalgaryScreen = () => (
+    <CityScreen 
+      imageSource={require('../assets/calgary.jpg')} 
+      cityUrl="https://www.calgary.ca/home.html" 
+    />
+  );
 
 const styles = StyleSheet.create({
     container: {
